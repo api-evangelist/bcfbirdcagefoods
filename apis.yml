@@ -1,23 +1,52 @@
 aid: bcfbirdcagefoods
+
 name: Bcfbirdcagefoods
-description: 'Bcfbirdcagefoods is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bcfbirdcagefoods is a stub company identified in the API Evangelist secondary-market harvest. It currently lacks publicly available API documentation, website, or detailed corporate information. This placeholder entry exists to enable future profiling and enrichment as more data becomes available, ensuring the company can be tracked within the API Evangelist ecosystem.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bcfbirdcagefoods/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Food
+- Agriculture
+- Technology
+- Startup
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
-- type: Website
-  url: https://equityzen.com/company/bcfbirdcagefoods
+
+  - type: Hosts
+    url: hosts/bcfbirdcagefoods-hosts.yml
+  - type: Vendors
+    url: vendors/bcfbirdcagefoods-vendors.yml
+  - type: DomainSecurity
+    url: security/bcfbirdcagefoods-domain-security.yml
+  - type: Website
+    url: https://equityzen.com/company/bcfbirdcagefoods
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: minimal
+  artifacts_added: 2
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
